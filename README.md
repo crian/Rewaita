@@ -146,11 +146,12 @@ sudo pacman -S xdg-desktop-portal-gnome
 Then reboot.
 
 
-# Adw-gtk3 support
+# Adw-gtk3 Support
 
 1. [Install](https://github.com/lassekongo83/adw-gtk3#how-to-use) adw-gtk3 onto your system.
-2. Set it as the 'legacy applications' style in GNOME Tweaks:
-<img width="750" height="578" alt="image" src="https://github.com/user-attachments/assets/53f1089a-dccb-4ffd-ab10-76e51c75b3e0" />
+2. Set 'Adw-gtk3' as the 'legacy applications' style in GNOME Tweaks:
+<img width="835" height="624" alt="image" src="https://github.com/user-attachments/assets/a5cb212b-ceba-4186-bfe6-1f8d49c59029" />
+<br/>
 3. It should just work from there.
 
 
