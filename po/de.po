@@ -517,3 +517,4 @@ msgstr "Jeder ist herzlich willkommen, unabhängig von Erfahrung oder Hintergrun
 
 #: src/widgets/guide_dialog.ui:416
 msgid "Open in Browser"
+msgstr ""

@@ -69,6 +69,17 @@
   </screenshots>
 
   <releases>
+    <release version="1.1.5" date="2026-07-25">
+      <url type="details">https://github.com/SwordPuffin/Rewaita/releases/tag/v1.1.5</url>
+        <description translate="no">
+          <p>Rewaita v1.1.5</p>
+          <ul>
+            <li>Fixed oversight for non-English users where the app wouldn't launch</li>
+            <li>Added German translations (Thanks to @crian)</li>
+            <li>Fixed bug with the window border option so it should work for GTK4</li>
+          </ul>
+      </description>
+    </release>
     <release version="1.1.4" date="2026-07-18">
       <url type="details">https://github.com/SwordPuffin/Rewaita/releases/tag/v1.1.4</url>
         <description translate="no">
