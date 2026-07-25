@@ -105,11 +105,11 @@ class ColorRow(Adw.ActionRow):
         self.add_suffix(end_box)
 
 class CustomBundle(Gtk.Box):
-    def __init__(self, title, bundle):
+    def __init__(self, label, bundle):
         super().__init__(orientation=Gtk.Orientation.VERTICAL, spacing=10, margin_start=12, margin_end=12)
-        self.prepend(title)
-        title.add_css_class("title-4")
-        colors = gnome_colors[title.get_label()]
+        label.add_css_class("title-4")
+        self.prepend(label)
+        colors = gnome_colors[label.title]
         description_label = Gtk.Label(label=colors["description"], wrap=True)
         description_label.add_css_class("dimmed")
         self.append(description_label)
@@ -125,15 +125,16 @@ class CustomPage(Gtk.Box):
     def __init__(self, parent):
         super().__init__(orientation=Gtk.Orientation.VERTICAL, spacing=20, margin_top=20)
 
-        main_label = Gtk.Label(label=_("Main Colors"))
-        success_label = Gtk.Label(label=_("Success Colors"))
-        destructive_label = Gtk.Label(label=_("Destructive Colors"))
-        warning_label = Gtk.Label(label=_("Warning Colors"))
-        interface_label = Gtk.Label(label=_("Interface Colors"))
-        colors_label = Gtk.Label(label=_("Named Colors"))
+        # The label.title is so the value is consistent through translations
+        main_label = Gtk.Label(label=_("Main Colors")); main_label.title = "Main Colors"
+        success_label = Gtk.Label(label=_("Success Colors")); success_label.title = "Success Colors"
+        destructive_label = Gtk.Label(label=_("Destructive Colors")); destructive_label.title = "Destructive Colors"
+        warning_label = Gtk.Label(label=_("Warning Colors")); warning_label.title = "Warning Colors"
+        interface_label = Gtk.Label(label=_("Interface Colors")); interface_label.title = "Interface Colors"
+        colors_label = Gtk.Label(label=_("Named Colors")); colors_label.title = "Named Colors"
 
-        for bundle, title in zip(gnome_colors.keys(), [main_label, success_label, destructive_label, warning_label, interface_label, colors_label]):
-            self.append(CustomBundle(title, bundle))
+        for bundle, label in zip(gnome_colors.keys(), [main_label, success_label, destructive_label, warning_label, interface_label, colors_label]):
+            self.append(CustomBundle(label, bundle))
 
         name_box = Gtk.Box(halign=Gtk.Align.CENTER, spacing=12)
         name_entry = Gtk.Entry(placeholder_text=_("Name (required)"), hexpand=True)

@@ -43,14 +43,14 @@ window.csd.tiled-left {
 window.csd:backdrop {
   transition: box-shadow 75ms cubic-bezier(0, 0, 0.2, 1);
   box-shadow: 0 8px 6px -5px rgba(0,0,0,0.2), 0 16px 15px 2px rgba(0,0,0,0.14),
-              0 6px 18px 5px rgba(0,0,0,0.12), 0 0 0 2px @accent-bg-color,
+              0 6px 18px 5px rgba(0,0,0,0.12), 0 0 0 2px var(--accent-bg-color),
               0 0 36px transparent;
 }
 
 window.csd, window.solid-csd, popover contents, dialog .background {
   transition: none;
   box-shadow: 0 8px 6px -5px rgba(0,0,0,0.2), 0 16px 15px 2px rgba(0,0,0,0.14),
-              0 6px 18px 5px rgba(0,0,0,0.12), 0 0 0 2px @accent-bg-color,
+              0 6px 18px 5px rgba(0,0,0,0.12), 0 0 0 2px var(--accent-bg-color),
               0 0 36px transparent;
 }
 """
