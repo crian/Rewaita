@@ -177,6 +177,10 @@ decoration {
   box-shadow: 0 3px 8px 1px rgba(0, 0, 0, 0.3), 0 0 0 2px shade(@border-color, 0.86);
 }
 
+.view {
+	background-color: @window-bg-color;
+}
+
 /* Headerbar / titlebar */
 headerbar, .titlebar, toolbar {
   background-color: @headerbar-bg-color;
@@ -317,8 +321,8 @@ menubar:backdrop {
 
 /* Dialogs */
 window.background.dialog, messagedialog, .dialog {
-  background-color: @dialog-bg-color;
-  color: @dialog-fg-color;
+  background-color: @window-bg-color;
+  color: @window-fg-color;
 }
 
 .keycap {
