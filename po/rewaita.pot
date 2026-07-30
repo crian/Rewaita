@@ -4,15 +4,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: rewaita\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-31 00:00+0000\n"
-"PO-Revision-Date: 2026-03-31 00:00+0000\n"
-"Last-Translator: \n"
-"Language-Team: \n"
+"POT-Creation-Date: 2026-07-26 01:24+0200\n"
+"PO-Revision-Date: 2026-07-26 01:24+0200\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.6\n"
 
 #: data/io.github.swordpuffin.rewaita.desktop.in:2
 #: data/io.github.swordpuffin.rewaita.metainfo.xml.in:7
@@ -28,292 +27,202 @@ msgid "Bring color to Adwaita"
 msgstr ""
 
 #: data/io.github.swordpuffin.rewaita.metainfo.xml.in:10
-msgid "Rewaita is a utility to recolor Gtk4/Adwaita apps to popular color schemes"
+msgid ""
+"Rewaita gives your Adwaita apps a fresh look by colorizing them with popular "
+"theme's palettes."
 msgstr ""
-""
-""
 
 #: data/io.github.swordpuffin.rewaita.metainfo.xml.in:11
-msgid ""
-"Changes only affect GTK3/4 applications; Other libraries are NOT supported"
+msgid "Features:"
 msgstr ""
-""
+
+#: data/io.github.swordpuffin.rewaita.metainfo.xml.in:13
+msgid "Modify application window controls"
+msgstr ""
+
+#: data/io.github.swordpuffin.rewaita.metainfo.xml.in:14
+msgid "Make custom themes"
+msgstr ""
 
 #: data/io.github.swordpuffin.rewaita.metainfo.xml.in:15
-msgid "Nathan Perlman"
-msgstr "Nathan Perlman"
+msgid "Palette swap/tint wallpapers"
+msgstr ""
 
-#: data/io.github.swordpuffin.rewaita.metainfo.xml.in:35
+#: data/io.github.swordpuffin.rewaita.metainfo.xml.in:16
+msgid "Add effects like transparency, window borders, or sharp corners"
+msgstr ""
+
+#: data/io.github.swordpuffin.rewaita.metainfo.xml.in:18
+msgid ""
+"Changes only affect GTK3/4 applications; other UI toolkits are not affected"
+msgstr ""
+
+#: data/io.github.swordpuffin.rewaita.metainfo.xml.in:22
+msgid "Nathan Perlman"
+msgstr ""
+
+#: data/io.github.swordpuffin.rewaita.metainfo.xml.in:51
 msgid "Browsing through dark themes"
 msgstr ""
 
-#: data/io.github.swordpuffin.rewaita.metainfo.xml.in:39
+#: data/io.github.swordpuffin.rewaita.metainfo.xml.in:55
 msgid "Browsing through light themes"
 msgstr ""
 
-#. Translators: Replace "translator-credits" with your name/username, and optionally an email or URL.
-#: src/main.py:157
+#: data/io.github.swordpuffin.rewaita.metainfo.xml.in:59
+msgid "Making a custom theme"
+msgstr ""
+
+#: data/io.github.swordpuffin.rewaita.metainfo.xml.in:63
+msgid "Changing the window control scheme"
+msgstr ""
+
+#: data/io.github.swordpuffin.rewaita.metainfo.xml.in:67
+msgid "Palette swapping dialog for wallpapers"
+msgstr ""
+
+#: data/io.github.swordpuffin.rewaita.metainfo.xml.in:159
+msgid "See v1.1.0"
+msgstr ""
+
+#: src/main.py:200
 msgid "translator-credits"
 msgstr ""
 
-#: src/utils.py:127
-msgid " has been deleted"
-msgstr ""
-
-#: src/widgets/custom_theme_page.py:210
-msgid " has been saved"
-msgstr ""
-
-#: src/utils.py:137
-msgid "Cancel"
-msgstr ""
-
-#: src/utils.py:134 src/utils.py:138
-msgid "Delete"
-msgstr ""
-
-#: src/utils.py:135
-msgid "Are you sure you want to delete that theme?\nThis cannot be undone."
-msgstr ""
-
-#: src/image_modifier.py:98
-msgid "Please select a theme first"
-msgstr ""
-
-#: src/widgets/loading_dialog.py:31
-msgid "This may take a moment"
-msgstr ""
-
-#: src/widgets/window_control_box.py:53
-msgid "Window Controls"
-msgstr ""
-
-#: src/widgets/window_control_box.py:24
-msgid "Default"
-msgstr ""
-
-#: src/widgets/window_control_box.py:25
-msgid "Colored"
-msgstr ""
-
-#: src/widgets/window_control_box.py:26
-msgid "MacOS"
-msgstr ""
-
-#: src/widgets/window_control_box.py:27
-msgid "Breeze"
-msgstr ""
-
-#: src/widgets/window_control_box.py:28
-msgid "Hidden"
-msgstr ""
-
-#: src/widgets/window_control_box.py:29
-msgid "Mint"
-msgstr ""
-
-#: src/widgets/custom_theme_page.py:140 src/widgets/accent_box.py:77
+#: src/widgets/accent_box.py:77
 msgid "Accent Colors"
 msgstr ""
 
-#: src/widgets/custom_theme_page.py:141
+#: src/widgets/custom_theme_page.py:129
 msgid "Main Colors"
 msgstr ""
 
-#: src/widgets/custom_theme_page.py:142
+#: src/widgets/custom_theme_page.py:130
 msgid "Success Colors"
 msgstr ""
 
-#: src/widgets/custom_theme_page.py:143
+#: src/widgets/custom_theme_page.py:131
 msgid "Destructive Colors"
 msgstr ""
 
-#: src/widgets/custom_theme_page.py:144
+#: src/widgets/custom_theme_page.py:132
 msgid "Warning Colors"
 msgstr ""
 
-#: src/widgets/custom_theme_page.py:145
+#: src/widgets/custom_theme_page.py:133
 msgid "Interface Colors"
 msgstr ""
 
-#: src/widgets/custom_theme_page.py:146
+#: src/widgets/custom_theme_page.py:134
 msgid "Named Colors"
 msgstr ""
 
-#: src/widgets/custom_theme_page.py:151
-msgid "Theme name (required)"
+#: src/widgets/custom_theme_page.py:140
+msgid "Name (required)"
 msgstr ""
 
-#: src/widgets/custom_theme_page.py:155
-msgid "Theme Type"
-msgstr ""
-
-#: src/widgets/custom_theme_page.py:156
+#: src/widgets/custom_theme_page.py:145
 msgid "Light"
 msgstr ""
 
-#: src/widgets/custom_theme_page.py:157
+#: src/widgets/custom_theme_page.py:146
 msgid "Dark"
 msgstr ""
 
-#: src/widgets/wallpaper_dialog.py:56 src/widgets/custom_theme_page.py:164
+#: src/widgets/custom_theme_page.py:154 src/widgets/wallpaper_dialog.py:56
 msgid "Save Folder"
 msgstr ""
 
-#: src/widgets/custom_theme_page.py:177
+#: src/widgets/custom_theme_page.py:161
 msgid "Save"
 msgstr ""
 
-#: src/widgets/custom_theme_page.py:182
+#: src/widgets/custom_theme_page.py:166
 msgid "/* Enter any extra CSS here */"
 msgstr ""
 
-#: src/widgets/extra_options_box.py:102
-msgid "Extra Options"
+#: src/widgets/custom_theme_page.py:195
+msgid " has been saved"
 msgstr ""
 
-#: src/widgets/extra_options_box.py:67
+#: src/widgets/extra_options_box.py:78
 msgid "Transparency"
 msgstr ""
 
-#: src/widgets/extra_options_box.py:68
+#: src/widgets/extra_options_box.py:79
 msgid "Adds a transparency effect to all window backdrops"
 msgstr ""
 
-#: src/widgets/extra_options_box.py:73
+#: src/widgets/extra_options_box.py:84
 msgid "Window Borders"
 msgstr ""
 
-#: src/widgets/extra_options_box.py:74
+#: src/widgets/extra_options_box.py:85
 msgid "Draws an accented border around the window"
 msgstr ""
 
-#: src/widgets/extra_options_box.py:79
+#: src/widgets/extra_options_box.py:90
 msgid "Sharp Corners"
 msgstr ""
 
-#: src/widgets/extra_options_box.py:80
+#: src/widgets/extra_options_box.py:91
 msgid "Gives all elements square borders"
 msgstr ""
 
-#: src/widgets/extra_options_box.py:85
+#: src/widgets/extra_options_box.py:96
+msgid "Use Light Accent Foreground Color"
+msgstr ""
+
+#: src/widgets/extra_options_box.py:97
+msgid "May work better for some themes or accents"
+msgstr ""
+
+#: src/widgets/extra_options_box.py:102
+msgid "Use Accent Color for Selected Tabs"
+msgstr ""
+
+#: src/widgets/extra_options_box.py:103
+msgid "Only applies to GTK4 application and GNOME Shell"
+msgstr ""
+
+#: src/widgets/extra_options_box.py:108
 msgid "Force Light Text in Overview"
 msgstr ""
 
-#: src/widgets/extra_options_box.py:86
+#: src/widgets/extra_options_box.py:109
 msgid "Might be useful for Blur my Shell users"
+msgstr ""
+
+#: src/widgets/extra_options_box.py:114
+msgid "Keep Top Panel Dark"
 msgstr ""
 
 #: src/widgets/extra_options_box.py:115
 msgid "The bar will stay dark regardless of theme"
 msgstr ""
 
+#: src/widgets/extra_options_box.py:120
+msgid "Transparent Top Panel"
+msgstr ""
+
 #: src/widgets/extra_options_box.py:121
 msgid "Makes the Top Panel Background Transparent"
+msgstr ""
+
+#: src/widgets/extra_options_box.py:126
+msgid "Reduce Rounding on Pill Buttons"
 msgstr ""
 
 #: src/widgets/extra_options_box.py:127
 msgid "Smoothens all pill button on the top panel"
 msgstr ""
 
-#: src/widgets/pref_page.py:27
-msgid "Preferences"
+#: src/widgets/extra_options_box.py:147
+msgid "Extra Options"
 msgstr ""
 
-#: src/widgets/pref_page.py:34
-msgid "Generate GTK-3.0 Theme"
-msgstr ""
-
-#: src/widgets/pref_page.py:34
-msgid "Highly recommended for all users"
-msgstr ""
-
-#: src/widgets/pref_page.py:34
-msgid "Generate GNOME Shell Theme"
-msgstr ""
-
-#: src/widgets/pref_page.py:34
-msgid "For GNOME users"
-msgstr ""
-
-#: src/widgets/pref_page.py:34
-msgid "Run in background"
-msgstr ""
-
-#: src/widgets/pref_page.py:34
-msgid "For users who swap between light/dark mode"
-msgstr ""
-
-#: src/widgets/pref_page.py:34
-msgid "Generate Firefox CSS Theme"
-msgstr ""
-
-#: src/widgets/pref_page.py:34
-msgid "May conflict with existing theme"
-msgstr ""
-
-#: src/widgets/theme_page.py:104 src/widgets/guide_dialog.ui:11
+#: src/widgets/guide_dialog.ui:11 src/widgets/theme_page.py:106
 msgid "User Guide"
-msgstr ""
-
-#: src/widgets/theme_page.py:110
-msgid "Tint Wallpaper"
-msgstr ""
-
-#: src/widgets/theme_page.py:120
-msgid "Reset to default"
-msgstr ""
-
-#: src/widgets/wallpaper_dialog.py:51
-msgid "Open File"
-msgstr ""
-
-#: src/widgets/wallpaper_dialog.py:72
-msgid "Drop Image Here"
-msgstr ""
-
-#: src/window.py:112
-msgid "Theming"
-msgstr ""
-
-#: src/window.py:113
-msgid "Custom"
-msgstr ""
-
-#: src/window.py:114
-msgid "Fine Tune"
-msgstr ""
-
-#: src/window.py:153
-msgid "Change GNOME shell theme to 'Rewaita' and reboot for full changes"
-msgstr ""
-
-#: src/window.ui:27
-msgid "Main Menu"
-msgstr ""
-
-#: src/window.ui:19
-msgid "Delete themes"
-msgstr ""
-
-#: src/window.ui:71
-msgid "_Keyboard Shortcuts"
-msgstr ""
-
-#: src/window.ui:75
-msgid "_About Rewaita"
-msgstr ""
-
-#: src/gtk_help-overlay.ui:11
-msgid "General"
-msgstr ""
-
-#: src/gtk_help-overlay.ui:14
-msgid "Show Shortcuts"
-msgstr ""
-
-#: src/gtk_help-overlay.ui:20
-msgid "Quit"
 msgstr ""
 
 #: src/widgets/guide_dialog.ui:15
@@ -321,7 +230,10 @@ msgid "Getting Started"
 msgstr ""
 
 #: src/widgets/guide_dialog.ui:16
-msgid "After setting a color scheme, go to GNOME Tweaks and set 'Rewaita' as the Shell theme. It will match the active scheme for visual continuity. This can be disabled in preferences."
+msgid ""
+"After setting a color scheme, go to GNOME Tweaks and set 'Rewaita' as the "
+"Shell theme. It will match the active scheme for visual continuity. This can "
+"be disabled in preferences."
 msgstr ""
 
 #: src/widgets/guide_dialog.ui:21
@@ -329,7 +241,9 @@ msgid "Run the Flatpak Override Commands"
 msgstr ""
 
 #: src/widgets/guide_dialog.ui:22
-msgid "This will ensure Flatpak applications are themed accordingly. See 'Flatpak Overrides' below for details."
+msgid ""
+"This will ensure Flatpak applications are themed accordingly. See 'Flatpak "
+"Overrides' below for details."
 msgstr ""
 
 #: src/widgets/guide_dialog.ui:29
@@ -337,7 +251,9 @@ msgid "Change the System Theme"
 msgstr ""
 
 #: src/widgets/guide_dialog.ui:30
-msgid "Many Linux distributions will set some custom GTK theme by default. To prevent conflicts, change the application theme to default or 'Adwaita'."
+msgid ""
+"Many Linux distributions will set some custom GTK theme by default. To "
+"prevent conflicts, change the application theme to default or 'Adwaita'."
 msgstr ""
 
 #: src/widgets/guide_dialog.ui:37
@@ -345,7 +261,9 @@ msgid "Automatic Switching"
 msgstr ""
 
 #: src/widgets/guide_dialog.ui:38
-msgid "Rewaita runs in the background to switch between light/dark mode and accent color changes. This can be disabled in preferences."
+msgid ""
+"Rewaita runs in the background to switch between light/dark mode and accent "
+"color changes. This can be disabled in preferences."
 msgstr ""
 
 #: src/widgets/guide_dialog.ui:45
@@ -353,11 +271,15 @@ msgid "Found a bug or want to contribute?"
 msgstr ""
 
 #: src/widgets/guide_dialog.ui:46
-msgid "Open an issue or pull request in the upstream repository. See the 'Get Involved' tab for details."
+msgid ""
+"Open an issue or pull request in the upstream repository. See the 'Get "
+"Involved' tab for details."
 msgstr ""
 
 #: src/widgets/guide_dialog.ui:59
-msgid "Rewaita only styles GTK-3/4 applications; other UI toolkits will not be affected"
+msgid ""
+"Rewaita only styles GTK-3/4 applications; other UI toolkits will not be "
+"affected"
 msgstr ""
 
 #: src/widgets/guide_dialog.ui:68
@@ -368,10 +290,8 @@ msgstr ""
 msgid "Run these commands so Flatpak applications can use your theme."
 msgstr ""
 
-#: src/widgets/guide_dialog.ui:87
-#: src/widgets/guide_dialog.ui:113
-#: src/widgets/guide_dialog.ui:267
-#: src/widgets/guide_dialog.ui:299
+#: src/widgets/guide_dialog.ui:87 src/widgets/guide_dialog.ui:113
+#: src/widgets/guide_dialog.ui:267 src/widgets/guide_dialog.ui:299
 msgid "Copy to clipboard"
 msgstr ""
 
@@ -384,7 +304,9 @@ msgid "Apply Theme to Firefox"
 msgstr ""
 
 #: src/widgets/guide_dialog.ui:134
-msgid "First, enable 'Generate Firefox CSS Theme' in the 'Fine Tune' tab. After that, follow the steps below to set it up."
+msgid ""
+"First, enable 'Generate Firefox CSS Theme' in the 'Fine Tune' tab. After "
+"that, follow the steps below to set it up."
 msgstr ""
 
 #: src/widgets/guide_dialog.ui:139
@@ -400,7 +322,9 @@ msgid "Step 2 — Firefox Gnome Theme (Optional)"
 msgstr ""
 
 #: src/widgets/guide_dialog.ui:148
-msgid "Rewaita is also compatible with the Firefox Gnome Theme, but the window controls will not be themed."
+msgid ""
+"Rewaita is also compatible with the Firefox Gnome Theme, but the window "
+"controls will not be themed."
 msgstr ""
 
 #: src/widgets/guide_dialog.ui:152
@@ -424,7 +348,9 @@ msgid "Apply the Shell Theme"
 msgstr ""
 
 #: src/widgets/guide_dialog.ui:183
-msgid "Rewaita includes a matching GNOME Shell theme. Follow these steps to enable it."
+msgid ""
+"Rewaita includes a matching GNOME Shell theme. Follow these steps to enable "
+"it."
 msgstr ""
 
 #: src/widgets/guide_dialog.ui:187
@@ -432,13 +358,12 @@ msgid "Step 1 — Install the User Themes extension"
 msgstr ""
 
 #: src/widgets/guide_dialog.ui:188
-msgid "GNOME Shell requires the User Themes extension to load custom shell themes."
+msgid ""
+"GNOME Shell requires the User Themes extension to load custom shell themes."
 msgstr ""
 
-#: src/widgets/guide_dialog.ui:192
-#: src/widgets/guide_dialog.ui:230
-#: src/widgets/guide_dialog.ui:333
-#: src/widgets/guide_dialog.ui:351
+#: src/widgets/guide_dialog.ui:192 src/widgets/guide_dialog.ui:230
+#: src/widgets/guide_dialog.ui:333 src/widgets/guide_dialog.ui:351
 msgid "Install"
 msgstr ""
 
@@ -447,7 +372,9 @@ msgid "Step 2 — Set any theme"
 msgstr ""
 
 #: src/widgets/guide_dialog.ui:205
-msgid "Rewaita will generate the theme automatically and place it in ~/.local/share/themes. This can be disabled in preferences."
+msgid ""
+"Rewaita will generate the theme automatically and place it in ~/.local/share/"
+"themes. This can be disabled in preferences."
 msgstr ""
 
 #: src/widgets/guide_dialog.ui:211
@@ -455,7 +382,8 @@ msgid "Step 3 — Select it in GNOME Tweaks"
 msgstr ""
 
 #: src/widgets/guide_dialog.ui:212
-msgid "Open GNOME Tweaks → Appearance → Shell and choose Rewaita from the dropdown."
+msgid ""
+"Open GNOME Tweaks → Appearance → Shell and choose Rewaita from the dropdown."
 msgstr ""
 
 #: src/widgets/guide_dialog.ui:220
@@ -463,7 +391,9 @@ msgid "Apply GDM Theme"
 msgstr ""
 
 #: src/widgets/guide_dialog.ui:221
-msgid "While Rewaita's theme is compatible with GDM, this process must be done manually. Step 3 needs to be repeated anytime you change themes."
+msgid ""
+"While Rewaita's theme is compatible with GDM, this process must be done "
+"manually. Step 3 needs to be repeated anytime you change themes."
 msgstr ""
 
 #: src/widgets/guide_dialog.ui:225
@@ -479,7 +409,9 @@ msgid "Step 2 — Overrides"
 msgstr ""
 
 #: src/widgets/guide_dialog.ui:243
-msgid "After setting any theme, run these commands to give GDM Settings access to it:"
+msgid ""
+"After setting any theme, run these commands to give GDM Settings access to "
+"it:"
 msgstr ""
 
 #: src/widgets/guide_dialog.ui:313
@@ -487,7 +419,8 @@ msgid "Step 3 — Choose the theme in GDM Settings"
 msgstr ""
 
 #: src/widgets/guide_dialog.ui:314
-msgid "Open GDM Settings → Appearance → Shell and choose Rewaita from the dropdown."
+msgid ""
+"Open GDM Settings → Appearance → Shell and choose Rewaita from the dropdown."
 msgstr ""
 
 #: src/widgets/guide_dialog.ui:322
@@ -515,9 +448,72 @@ msgid "Contribute to Rewaita"
 msgstr ""
 
 #: src/widgets/guide_dialog.ui:406
-msgid "Anyone, regardless of experience or background, is welcome to join. Open an issue to report bugs or suggest themes, or submit a pull request to contribute directly."
+msgid ""
+"Anyone, regardless of experience or background, is welcome to join. Open an "
+"issue to report bugs or suggest themes, or submit a pull request to "
+"contribute directly."
 msgstr ""
 
 #: src/widgets/guide_dialog.ui:416
 msgid "Open in Browser"
+msgstr ""
+
+#: src/widgets/loading_dialog.py:31
+msgid "This may take a moment"
+msgstr ""
+
+#: src/widgets/pref_page.py:15
+msgid "Preferences"
+msgstr ""
+
+#: src/widgets/theme_page.py:112
+msgid "Tint Wallpaper"
+msgstr ""
+
+#: src/widgets/theme_page.py:122
+msgid "Reset to default"
+msgstr ""
+
+#: src/widgets/wallpaper_dialog.py:51
+msgid "Open File"
+msgstr ""
+
+#: src/widgets/wallpaper_dialog.py:72
+msgid "Drop Image Here"
+msgstr ""
+
+#: src/widgets/window_control_box.py:52
+msgid "Window Controls"
+msgstr ""
+
+#: src/window.py:112
+msgid "Theming"
+msgstr ""
+
+#: src/window.py:113
+msgid "Custom"
+msgstr ""
+
+#: src/window.py:114
+msgid "Fine Tune"
+msgstr ""
+
+#: src/window.py:158
+msgid "Change GNOME shell theme to 'Rewaita' and reboot for full changes"
+msgstr ""
+
+#: src/window.ui:19
+msgid "Delete themes"
+msgstr ""
+
+#: src/window.ui:27
+msgid "Main Menu"
+msgstr ""
+
+#: src/window.ui:71
+msgid "_Keyboard Shortcuts"
+msgstr ""
+
+#: src/window.ui:75
+msgid "_About Rewaita"
 msgstr ""
