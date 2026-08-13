@@ -8,8 +8,8 @@ windowcontrols:not(.rewaita-display) > button.maximize:not(:hover) image {
 }
 
 windowcontrols:not(.rewaita-display) > button.close > image {
-	background-color: @accent_bg_color;
-	color: @accent_fg_color;
+	background-color: var(--accent-bg-color);
+	color: var(--accent-fg-color);
 }
 
 windowcontrols:not(.rewaita-display) > button.close > image:hover {

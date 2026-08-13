@@ -20,57 +20,7 @@
 import gi
 from gi.repository import Gtk, Adw, GLib
 from .utils import Preferences
-
-transparency_css = """
-.background {
-	opacity: 0.92;
-}
-"""
-
-border_css = """
-window {
-  border: none;
-}
-
-window.csd.maximized, window.csd.fullscreen, window.csd.tiled,
-window.csd.tiled-top, window.csd.tiled-right, window.csd.tiled-bottom,
-window.csd.tiled-left {
-  border-radius: 0;
-  border: none;
-  transition: none;
-}
-
-window.csd:backdrop {
-  transition: box-shadow 75ms cubic-bezier(0, 0, 0.2, 1);
-  box-shadow: 0 8px 6px -5px rgba(0,0,0,0.2), 0 16px 15px 2px rgba(0,0,0,0.14),
-              0 6px 18px 5px rgba(0,0,0,0.12), 0 0 0 2px var(--accent-bg-color),
-              0 0 36px transparent;
-}
-
-window.csd, window.solid-csd, popover contents, dialog .background {
-  transition: none;
-  box-shadow: 0 8px 6px -5px rgba(0,0,0,0.2), 0 16px 15px 2px rgba(0,0,0,0.14),
-              0 6px 18px 5px rgba(0,0,0,0.12), 0 0 0 2px var(--accent-bg-color),
-              0 0 36px transparent;
-}
-"""
-
-sharp_corners_css = """
-* {
-   border-radius: 0px;
-}
-"""
-
-accent_tab_css_gtk4 = """
-*:selected {
-    color: var(--accent-bg-color);
-}
-
-*:checked:not(expander) {
-    color: var(--accent-fg-color);
-    background-color: var(--accent-bg-color);
-}
-"""
+from .css_templates import transparency_css, border_css, sharp_corners_css, accent_tab_css_gtk4
 
 options = [
     (

@@ -19,58 +19,13 @@
 
 import gi, os, shutil, json
 from gi.repository import Gtk, Gdk, GLib, Xdp, Adw
+from .css_templates import no_pill_css, accent_tab_css_gs
 from .image_modifier import hex_to_rgb
 from .firefox_gnome_theme import FirefoxGnomeThemePlugin
 
 settings = Xdp.Portal().get_settings()
 css_provider = Gtk.CssProvider()
 firefox_theme_plugin = FirefoxGnomeThemePlugin()
-
-no_pill_css = """
-#panel .panel-button, .search-entry, .clock {
-  border-radius: 12px;
-}
-
-.quick-toggle, .quick-toggle-has-menu {
-  border-radius: 12px;
-}
-
-.quick-toggle-has-menu .quick-toggle {
-  min-width: auto;
-  max-width: auto;
-}
-
-.quick-toggle-has-menu .quick-toggle:ltr {
-  border-radius: 12px 0 0 12px;
-}
-
-.quick-toggle-has-menu .quick-toggle:rtl {
-  border-radius: 0 12px 12px 0;
-}
-
-.quick-toggle-has-menu .quick-toggle:ltr:last-child {
-  border-radius: 12px;
-}
-
-.quick-toggle-has-menu .quick-toggle:rtl:last-child {
-  border-radius: 12px;
-}
-
-.quick-toggle-has-menu .quick-toggle-menu-button:ltr {
-  border-radius: 0 12px 12px 0;
-}
-
-.quick-toggle-has-menu .quick-toggle-menu-button:rtl {
-  border-radius: 12px 0 0 12px;
-}
-"""
-
-accent_tab_css_gs = """
-#panel .panel-button:hover, .clock:hover,
-#panel .panel-button:active, .clock:active{
-  color: @accent-color !important;
-}
-"""
 
 class Preferences:
     DEFAULTS = {

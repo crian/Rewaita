@@ -1,5 +1,5 @@
 windowcontrols:not(.rewaita-display):backdrop > button {
-  background-color: @card_bg_color;
+  background-color: var(--card-bg-color);
 }
 
 windowcontrols:not(.rewaita-display) > button:not(.suggested-action):not(.destructive-action) {
@@ -28,7 +28,7 @@ windowcontrols:not(.rewaita-display) > button.maximize:hover:not(.suggested-acti
 windowcontrols:not(.rewaita-display) > button.maximize:active:not(.suggested-action):not(.destructive-action):not(:backdrop),
 windowcontrols:not(.rewaita-display) > button.close:hover:not(.suggested-action):not(.destructive-action):not(:backdrop),
 windowcontrols:not(.rewaita-display) > button.close:active:not(.suggested-action):not(.destructive-action):not(:backdrop) {
-  color: @window_bg_color;
+  color: var(--window-bg-color);
 }
 
 windowcontrols:not(.rewaita-display) > button.minimize:backdrop:hover:not(.suggested-action):not(.destructive-action),
@@ -37,27 +37,27 @@ windowcontrols:not(.rewaita-display) > button.maximize:backdrop:hover:not(.sugge
 windowcontrols:not(.rewaita-display) > button.maximize:backdrop:active:not(.suggested-action):not(.destructive-action),
 windowcontrols:not(.rewaita-display) > button.close:backdrop:hover:not(.suggested-action):not(.destructive-action),
 windowcontrols:not(.rewaita-display) > button.close:backdrop:active:not(.suggested-action):not(.destructive-action) {
-  color: @window_fg_color;
+  color: var(--window-fg-color);
 }
 
 
 windowcontrols:not(.rewaita-display) > button.minimize:backdrop:not(.suggested-action):not(.destructive-action) > image,
 windowcontrols:not(.rewaita-display) > button.maximize:backdrop:not(.suggested-action):not(.destructive-action) > image,
 windowcontrols:not(.rewaita-display) > button.close:backdrop:not(.suggested-action):not(.destructive-action) > image {
-  background-color: @card_bg_color;
+  background-color: var(--card-bg-color);
   filter: brightness(150%);
 }
 
 windowcontrols:not(.rewaita-display) > button.minimize:not(.suggested-action):not(.destructive-action) > image {
-  background-color: @yellow_1;
+  background-color: var(--yellow-1);
 }
 
 windowcontrols:not(.rewaita-display) > button.maximize:not(.suggested-action):not(.destructive-action) > image {
-  background-color: @green_1;
+  background-color: var(--green-1);
 }
 
 windowcontrols:not(.rewaita-display) > button.close:not(.suggested-action):not(.destructive-action) > image {
-  background-color: @red_1;
+  background-color: var(--red-1);
 }
 
 windowcontrols:not(.rewaita-display) {

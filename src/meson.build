@@ -34,6 +34,7 @@ rewaita_sources = [
   'utils.py',
   'image_modifier.py',
   'themes/firefox_gnome_theme.py',
+  'themes/css_templates.py',
   'widgets/custom_theme_page.py',
   'widgets/theme_page.py',
   'widgets/window_control_box.py',

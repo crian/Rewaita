@@ -118,15 +118,16 @@ class ThemePage(Gtk.Box):
 
         snippet = self.get_example_text()
         for theme_type in ["light", "dark"]:
-            self.append(Adw.Clamp(maximum_size=1200, child=Gtk.Separator(margin_start=20, margin_end=20, margin_top=25)))
-            reset_button = Gtk.Button(icon_name="reload-symbolic", tooltip_text=_("Reset to default"))
-            reset_button.add_css_class("circular")
-            reset_button.connect("clicked", parent.on_theme_button_clicked, "Default", theme_type)
+            self.append(Adw.Clamp(maximum_size=600, child=Gtk.Separator(margin_start=20, margin_end=20, margin_top=25)))
 
             default_theme_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), theme_type)
             default_themes = os.listdir(default_theme_path)
             symlink_all_in_dir(default_theme_path, os.path.join(GLib.get_user_data_dir(), theme_type))
             themes = os.listdir(os.path.join(parent.data_dir, theme_type))
+
+            reset_button = Gtk.Button(icon_name="reload-symbolic", tooltip_text=_("Reset to default"))
+            reset_button.add_css_class("circular")
+            reset_button.connect("clicked", parent.on_theme_button_clicked, "Default", theme_type)
 
             if(theme_type == "light"):
                 parent.light_flowbox = Gtk.FlowBox(column_spacing=12, row_spacing=12, max_children_per_line=3, homogeneous=True, margin_start=12, margin_end=12, selection_mode=Gtk.SelectionMode.NONE)
@@ -137,11 +138,31 @@ class ThemePage(Gtk.Box):
                 flowbox = parent.dark_flowbox
                 parent.dark_button = reset_button
 
-            title_box = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, halign=Gtk.Align.CENTER)
-            title = Gtk.Label(label=_(theme_type.capitalize()), margin_end=25)
+            toggle_button = Gtk.ToggleButton(active=True, tooltip_text=_("Show More"), icon_name="pan-down-symbolic")
+            toggle_button.add_css_class("flat")
+            toggle_button.add_css_class("circular")
+
+            title_box = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, halign=Gtk.Align.CENTER, valign=Gtk.Align.CENTER, spacing=25)
+            title = Gtk.Label(label=_(theme_type.capitalize()))
             title.add_css_class("title-2")
-            title_box.append(title); title_box.append(reset_button)
+            title_box.append(title); title_box.append(reset_button); title_box.append(toggle_button)
             self.append(title_box)
+
+            revealer = Gtk.Revealer(transition_type=Gtk.RevealerTransitionType.SLIDE_DOWN, transition_duration=200)
+            revealer.set_reveal_child(True)
+
+            def on_toggle_clicked(button, revealer=revealer, reset_button=reset_button):
+                expanded = button.get_active()
+                revealer.set_reveal_child(expanded)
+                button.set_icon_name("pan-down-symbolic" if expanded else "pan-end-symbolic")
+                reset_button.set_visible(expanded)
+
+            toggle_button.connect("toggled", on_toggle_clicked)
+
+            if(theme_type == "light"):
+                parent.light_revealer = revealer
+            else:
+                parent.dark_revealer = revealer
 
             flowbox.snippet = snippet
             for theme in sorted(themes):
@@ -170,11 +191,11 @@ class ThemePage(Gtk.Box):
                 flowbox.append(btn)
 
             flowbox.set_sort_func(flowbox_sort_func, None)
-            self.append(Adw.Clamp(maximum_size=900, child=flowbox))
+            revealer.set_child(Adw.Clamp(maximum_size=900, child=flowbox))
+            self.append(revealer)
 
     def get_example_text(self):
         while(True):
             example = fortune()
             if(len(example) < 70 and not "<" in example and ">" not in example):
                 return example
-

@@ -1,23 +1,23 @@
 windowcontrols.start:not(.rewaita-display) > button.minimize > image {
-    color: @yellow_1;
+    color: var(--yellow-1);
 }
 
 windowcontrols.start:not(.rewaita-display) > button.maximize > image {
-    color: @green_1;
+    color: var(--green-1);
 }
 
 windowcontrols.start:not(.rewaita-display) > button.close > image {
-    color: @red_1;
+    color: var(--red-1);
 }
 
 windowcontrols.end:not(.rewaita-display) > button.minimize > image {
-    color: @yellow_1;
+    color: var(--yellow-1);
 }
 
 windowcontrols.end:not(.rewaita-display) > button.maximize > image {
-    color: @green_1;
+    color: var(--green-1);
 }
 
 windowcontrols.end:not(.rewaita-display) > button.close > image {
-    color: @red_1;
+    color: var(--red-1);
 }
