@@ -474,6 +474,11 @@ msgstr ""
 msgid "Reset to default"
 msgstr ""
 
+
+#: src/widgets/theme_page.py:141
+msgid "Show More"
+msgstr ""
+
 #: src/widgets/wallpaper_dialog.py:51
 msgid "Open File"
 msgstr ""
